@@ -41,3 +41,6 @@ yarn-error.log*
 next-env.d.ts
 
 eda/venv
+eda/games.csv
+
+public/games.csv
