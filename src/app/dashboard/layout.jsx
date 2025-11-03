@@ -14,7 +14,7 @@ export default function DashboardLayout({ children }) {
   return (
     <div className="flex h-screen bg-gray-900 text-white">
       {/* Sidebar */}
-      <aside className="w-64 bg-black p-6 flex flex-col fixed h-full border-r border-gray-800">
+      <aside className="w-64 bg-black p-6 flex flex-col fixed h-full border-r border-gray-800 overflow-y-auto">
         <h1 className="text-xl font-bold mb-6 text-blue-400">
           Steam Dashboard
         </h1>
@@ -97,6 +97,18 @@ export default function DashboardLayout({ children }) {
             className={isActive("/dashboard/achievements-analysis")}
           >
             Achievements Analysis
+          </Link>
+          <Link
+            href="/dashboard/multiplayer-vs-singleplayer"
+            className={isActive("/dashboard/multiplayer-vs-singleplayer")}
+          >
+            Multiplayer vs Singleplayer
+          </Link>
+          <Link
+            href="/dashboard/playtime-vs-recommendations"
+            className={isActive("/dashboard/playtime-vs-recommendations")}
+          >
+            Playtime vs Recommendations
           </Link>
         </nav>
       </aside>
